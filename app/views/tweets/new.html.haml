@@ -1,0 +1,15 @@
+.form
+  .form__title
+    %h1 Today's routine check
+    %h2 今日のルーティーンチェック
+  = form_for [@group, @tweet] do |f|
+    .form__select
+      = f.label :group_id
+      = f.collection_select :group_id, Group.all, :id, :name
+    .form__text
+    = f.text_area :content, class: 'form__text__box', size: "100x50",placeholder: '今日の記録をメモしておこう！'
+    .form__mask
+      = f.label :image, class: 'form__mask__image' do
+        = f.file_field :image, class: 'hidden'
+    .for__submit
+      = f.submit 'やった！', class: 'form__submit--btn'

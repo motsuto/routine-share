@@ -11,43 +11,39 @@
 
 .center
   .center__display
+    .center__display__date
+      = @today
+    .center__display__name
+      = current_user.name
+    .center__display__check
+      = link_to new_tweet_path, class: "center__display__check__btn" do
+        Today's routine check
+    .center__display__routineList
+      = link_to tweets_path, class: "center__display__routineList__btn" do
+        Records so far
     .center__display__item
-      .center__display__item__name
-        tony
-      .center__display__item__date
-        4月２日
-        -# = @today
       .center__display__item__edit
-        = link_to "#", class: "center__display__item__edit__btn" do
-          マイアカウント編集
+        = link_to edit_user_path(current_user), class: "center__display__item__edit__btn" do
+          Edit my account
           = icon('fa', 'cog', class: 'icon')
       .center__display__item__create
-        = link_to "#", class: "center__display__item__create__btn" do
-          ルーティン作成
+        = link_to new_group_path, class: "center__display__item__create__btn" do
+          Create routine
           = icon('fa', 'edit', class: 'icon')
-    .center__display__check
-      = link_to "#", class: "center__display__check__btn" do
-        今日のルーティンチェック
-
-        -# = current_user.name
-        -# = link_to edit_user_path(current_user), class: "center__display__item__edit__btn" do
-        -# = link_to new_group_path(current_user), class: "center__display__item__create__btn" do
 
 .bottom
-  .bottom__content
-    .bottom__content__image
-      -# = image_tag group.image
-      グループ画像
-    .bottom__content__text
-      -# = group.name
-      自炊
-    .bottom__content__show
-      = link_to "#", class: "bottom__content__show__btn" do
-        詳細
-    .bottom__content__edit
-      = link_to "#", class: "bottom__content__edit__btn" do
-        edit
-
-  -# - current_user.groups.each do |group|
-  -# = link_to group_path(@group), class: "bottom__content__show__btn" do
-  -# = link_to edit_group_path(@group), class: "bottom__content__edit__btn" do
+  - current_user.groups.each do |group|
+    .bottom__content
+      .bottom__content__image
+        = image_tag group.image
+      .bottom__content__text
+        = group.name
+      .bottom__content__member
+        .bottom__content__member__text
+          Member
+        - group.users.each do |user|
+          .bottom__content__member__list
+            = user.name
+      .bottom__content__edit
+        = link_to edit_group_path(group), class: "bottom__content__edit__btn" do
+          edit

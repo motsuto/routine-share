@@ -1,0 +1,23 @@
+.tweet
+  .tweet__header
+    .tweet__header__text
+      Records so far
+    .tweet__header__search
+      
+  .tweet__main
+    - @tweets.each do |tweet|
+      .tweet__main__content
+        .upper-tweet
+          .upper-tweet__group-image
+            = image_tag tweet.group.image
+          .upper-tweet__group-name
+            = tweet.group.name
+          .upper-tweet__user-name
+            = tweet.user.name
+          .upper-tweet__date
+            = tweet.created_at.strftime("%Y.%m.%d")
+        .lower-tweet
+          - if tweet.content.present?
+            %p.lower-tweet__content
+              = simple_format(tweet.content)
+          = image_tag tweet.image.url, class: 'lower-message__image' if tweet.image.present?
