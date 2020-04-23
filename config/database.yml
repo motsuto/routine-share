@@ -49,7 +49,10 @@ test:
 #
 production:
   <<: *default
-  database: routine-share_production
-  username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
+  # database: routine-share_production
+  # username: root
+  # password: <%= ENV['DATABASE_PASSWORD'] %>
+  # socket: /var/lib/mysql/mysql.sock
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
