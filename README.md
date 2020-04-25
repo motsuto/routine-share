@@ -1,18 +1,13 @@
 # README
 
-![routine-share](https://routine-share.herokuapp.com)
-
 <h1 align="center">routine-share</h1>
 
 <h2> Overview </h2>
 
 <p> This app allows you to share your routine with a lot of people and keep them motivated and habit-built. </p>
 
-
-
-<p align="center">
-  <img src="https://gyazo.com/441283a478466f92c83606298df36e51" width=40%>
-</p>
+<h2> Production environment </h2>
+  <a href="デプロイ先のURL"><img src="https://routine-share.herokuapp.com" width="80px;" /></a>
 
 ## usersテーブル
 |Column|Type|Options|
