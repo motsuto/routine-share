@@ -7,7 +7,7 @@
 <p> This app allows you to share your routine with a lot of people and keep them motivated and habit-built. </p>
 
 <h2> Production environment </h2>
-  <a href="デプロイ先のURL"><img src="https://routine-share.herokuapp.com" width="80px;" /></a>
+  <p> https://routine-share.herokuapp.com </p>
 
 ## usersテーブル
 |Column|Type|Options|
