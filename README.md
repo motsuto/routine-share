@@ -1,5 +1,14 @@
 # README
 
+<h1 align="center">routine-share</h1>
+
+<h2> Overview </h2>
+
+<p> This app allows you to share your routine with a lot of people and keep them motivated and habit-built. </p>
+
+<h2> Production environment </h2>
+  <p> https://routine-share.herokuapp.com </p>
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
