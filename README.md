@@ -2,9 +2,16 @@
 
 <h1 align="center">routine-share</h1>
 
-<h2> Overview </h2>
+<h2> 概要 </h2>
 
-<p> This app allows you to share your routine with a lot of people and keep them motivated and habit-built. </p>
+<p> ルーティンをみんなでシェアすることで、周りから刺激をもらい、習慣を身に着けることをお手伝いするアプリです。 </p>
+
+<h2> 制作背景 </h2>
+
+<p> コロナウイルスの影響で家にいる時間が長くなり、何もしないで一日が終わり気分が落ち込んでしまう人がいることを知りました。
+そんな思いをしている人を少しでも減らすために、今日も一日やりきったと思え、かつその思いをみんなで共有できるアプリを製作しました。</p>
+
+
 
 <h2> Production environment </h2>
   <p> https://routine-share.herokuapp.com </p>
