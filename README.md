@@ -10,9 +10,19 @@
 
 <p> コロナウイルスの影響で家にいる時間が長くなり、何もしないで一日が終わり気分が落ち込んでしまう人がいることを知りました。　そんな思いをしている人を少しでも減らすために、今日も一日やりきったと思え、かつその思いをみんなで共有できるアプリを製作しました。</p>
 
-![アプリ内画像](images/1dc89ae22ceb42c22f21d5a93bcccb87.png)
+![routineShare](https://github.com/motuto/routine-share/blob/master/app/assets/images/1dc89ae22ceb42c22f21d5a93bcccb87.png)
 
-<h2> Production environment </h2>
+<p>グループ一覧</p>
+
+![routineShare](https://github.com/motuto/routine-share/blob/master/app/assets/images/d8aa5081cc67f46e52ab978cf17a0efb.png)
+
+<p>みんなのルーティンを見てやる気UP！</p>
+
+![routineShare](https://github.com/motuto/routine-share/blob/master/app/assets/images/053c5bc41accbc55ded4b5eb067eff25.png)
+
+
+
+<h2> 本番環境 </h2>
   <p> https://routine-share.herokuapp.com </p>
 
 ## usersテーブル
