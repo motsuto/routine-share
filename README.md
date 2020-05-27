@@ -10,6 +10,11 @@
 
 <p> 今日行ったルーティンを文字や画像を使ってでツイートできます。また、グループ機能や、他の人のツイートを閲覧することができます。 </p>
 
+<Ul>
+  <li> ユーザー登録、ログイン、ログアウト </li>
+  <li> グループ作成 </li>
+  <li> 画像か文書、また両方記入した場合ツイート可能 </li>
+  <li> ツイート閲覧 </li>
 
 <h2> 制作背景 </h2>
 
@@ -42,46 +47,48 @@
 <p> このアプリには、閲覧ページにはグループに限らず全てのツイートが表示され、ログインするたびに画像が表示されないと、まだまだ課題があります。今後はプログラミングスキルをさらに身につけ、自分の成長に繋げます。 </p>
 
 
-## usersテーブル
+## DB設計図
+
+### usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
 |nickname|string|null: false|
-### Association
+#### Association
 - has_many :tweets
 - has_many :groups_users
 - has_many  :groups, through:  :groups_users
 
-## tweetsテーブル
+### tweetsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text||
 |image|text||
 |user|references|null: false, foreign_key: true|
 |group|references|null: false, foreign_key: true|
-### Association
+#### Association
 - belongs_to :user
 - belongs_to :group
 
-## groupsテーブル
+### groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 |image|text|null: false|
-### Association
+#### Association
 - has_many :tweets
 - has_many :groups_users
 - has_many  :users,  through:  :groups_users
 - belongs_to :icon
 
-## groups_usersテーブル
+### groups_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |user|references|null: false, foreign_key: true|
 |group|references|null: false, foreign_key: true|
 
-### Association
+#### Association
 - belongs_to :group
 - belongs_to :user
