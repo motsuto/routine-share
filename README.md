@@ -6,7 +6,7 @@
 <p> ルーティンをみんなでシェアすることで、周りから刺激をもらい、習慣を身に着けることをお手伝いするアプリです。 </p>
 
 <h2> 開発環境 </h2>
-<p> Ruby(2.5.1)/Ruby on Rails(5.0.7.2)/MySQL/Github/AWS/Visual Studio Code </p>
+<p> Ruby(2.5.1)/Ruby on Rails(5.0.7.2)/MySQL/Github/Heroku/Visual Studio Code </p>
 
 <h2> テストアカウント </h2>
 <p> メールアドレス: test@gmail.com </p>
